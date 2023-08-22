@@ -1,0 +1,24 @@
+{
+  "name": "themastertailoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeyvaGeorge/TheMasterTailoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeyvaGeorge/TheMasterTailoring/issues"
+  },
+  "homepage": "https://github.com/LeyvaGeorge/TheMasterTailoring#readme",
+  "dependencies": {
+    "gitignore": "^0.7.0",
+    "sass": "^1.66.1"
+  }
+}
