@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+}
+header h2 {
+  border: 2px solid black;
+  font-size: 4rem;
+  padding: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 30rem;
+  padding-left: 0px;
+}
+header ul h4 {
+  font-size: 3rem;
+}
+
+main h1 {
+  font-size: 5rem;
+  border: 2px solid black;
+  width: 38rem;
+}
+
+/*# sourceMappingURL=style.css.map */
