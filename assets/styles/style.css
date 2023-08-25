@@ -1,30 +1,68 @@
+body {
+  margin: 0px; }
+
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
   height: 7rem;
-}
-header h2 {
-  border: 2px solid black;
-  font-size: 4rem;
-  padding: 2px;
-}
-header ul {
+  width: 100%;
+  background-color: #EDEDED;
+  z-index: 10; }
+  header h2 {
+    border: 2px solid black;
+    font-size: 4rem;
+    padding: 2px;
+    background-color: white; }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 30rem;
+    padding-left: 0px; }
+    header ul h4 {
+      font-size: 3rem;
+      margin: 0rem; }
+
+.center {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  width: 30rem;
-  padding-left: 0px;
-}
-header ul h4 {
-  font-size: 3rem;
-}
+  justify-content: center;
+  position: relative; }
 
-main h1 {
-  font-size: 5rem;
-  border: 2px solid black;
-  width: 38rem;
-}
+main {
+  padding-top: 7rem;
+  margin: 1rem; }
+  main .The {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    font-size: 2rem;
+    top: 12px;
+    margin: 0;
+    padding: 0px 10px; }
+  main #Title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 38rem;
+    padding: 1rem;
+    margin-top: 2rem; }
+    main #Title #Mas {
+      padding-right: 10rem;
+      display: flex;
+      justify-content: center; }
+    main #Title #Tail {
+      display: flex;
+      justify-content: center;
+      padding-left: 10rem; }
+  main h1 {
+    font-size: 5rem;
+    margin: 0rem; }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  height: 5000px;
+  background-color: green; }

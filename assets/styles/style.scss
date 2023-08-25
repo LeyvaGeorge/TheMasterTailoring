@@ -1,12 +1,21 @@
+body{
+    margin: 0px;
+}
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
     height: 7rem;
+    width: 100%;
+    background-color: #EDEDED;
+    z-index: 10;
     h2 {
         border: 2px solid black;  
         font-size: 4rem;
-        padding: 2px;  
+        padding: 2px;
+        background-color: white;  
     }
     ul {
         
@@ -18,16 +27,55 @@ header {
         padding-left: 0px;
         h4 {
             font-size: 3rem;
+            margin: 0rem;
         }
     }
 }
-
-main {
+.center{
     display: flex;
     justify-content: center;
-    h1 {
-        font-size: 5rem;
+    position: relative;
+}
+main {
+    padding-top: 7rem; // this seperates the top from the nav-bar
+    margin: 1rem;
+    .The{
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        font-size: 2rem;
+        top:12px;
+        margin: 0;
+        padding: 0px 10px;
+    }
+    #Title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         border: 2px solid black;
         width: 38rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        #Mas{
+            padding-right: 10rem;
+            display: flex;
+            justify-content: center;
+        }
+        #Tail{
+            display: flex;
+            justify-content: center;
+            padding-left: 10rem;
+        } 
     }
+    
+    h1 {
+        font-size: 5rem;
+        margin: 0rem;
+        
+    }
+}
+
+footer {
+    height: 5000px;
+    background-color: green;
 }
