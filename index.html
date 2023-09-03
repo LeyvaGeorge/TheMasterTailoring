@@ -9,13 +9,30 @@
     <script src="dest/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h2>M T</h2>
+    <header >
+      <nav id="navigation-bar" class="navbar bg-body-tertiary px-3 ">
+        <a class="navbar-brand" href="#">
+          <h2>M T</h2>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#hours">
+              <h3> Hours </h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">
+              <h3>Location</h3>
+            </a>
+          </li>
+        </ul>
+      </nav>
+        <!-- <h2>M T</h2>
         <ul>
             <li><h4>Call</h4></li>
             <li><a href="#hours"><h4>Hours</h4></a></li>
             <li><a href="#location"><h4>Location</h4></a></li>
-        </ul>
+        </ul> -->
     </header>
     <main>
         
@@ -68,8 +85,46 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h3>Hours</h3>
-        <h3>Location</h3>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <h4 id="hours">Hours</h4>
+          <div class="hrs">
+            <!-- This portion to Display the hours for the Store -->
+            <div class="hrs-item">
+              <div>
+                <h5>Monday - Friday:</h5>
+                <h5>Saturday:</h5>
+                <h5>Sunday:</h5>
+              </div>
+              <div>
+                <h5>10:00 to 5:00</h5>
+                <h5>10:00 to 2:00</h5>
+                <h5>Closed</h5>
+              </div>
+            </div >
+            <!-- This portion to Display an image of open/close -->
+            <div class="hrs-item">
+              <!-- <img src="assets/images/tim-mossholder-sxb8StmTfaw-unsplash.jpg" alt="open sign"> -->
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          
+
+          <h4 id="location">Location</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+        </div>
+        <!-- ============================================== -->
+
+        <!-- <h3>Hours</h3>
+        <h3>Location</h3> -->
     </main>
     <footer>
 

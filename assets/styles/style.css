@@ -11858,28 +11858,25 @@ body {
   margin: 0px;
 }
 
-header {
+.navbar-collapse {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+}
+
+header {
   position: fixed;
   top: 0;
-  height: 7rem;
   width: 100%;
   background-color: #EDEDED;
   z-index: 10;
 }
 header h2, header .h2 {
   border: 2px solid black;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 2px;
   background-color: white;
 }
 header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
   width: 30rem;
   padding-left: 0px;
 }
@@ -11897,7 +11894,7 @@ header ul h4, header ul .h4 {
 main {
   padding-top: 7rem;
   margin: 1rem;
-  background-color: aqua;
+  background-color: white;
 }
 main .The {
   position: absolute;
@@ -11931,78 +11928,18 @@ main h1, main .h1 {
   font-size: 5rem;
   margin: 0rem;
 }
-main .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+main #carouselExampleCaptions {
+  margin-top: 3rem;
 }
-main .slideshow-container .mySlides {
-  display: none;
+main .hrs {
+  display: flex;
+  flex-wrap: wrap;
 }
-main .slideshow-container .mySlides img {
-  vertical-align: middle;
-}
-main .slideshow-container .mySlides .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-main .slideshow-container .mySlides .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-main .slideshow-container .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-main .slideshow-container .prev, main .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-main .slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-main .slideshow-container .prev:hover, main .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-main .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-main .active, main .dot:hover {
-  background-color: #717171;
+main .hrs .hrs-item {
+  flex: 1;
+  padding: 10px;
+  height: 300px;
+  background-color: darkcyan;
 }
 
 .crop-container {
@@ -12023,7 +11960,6 @@ main .active, main .dot:hover {
 }
 
 footer {
-  height: 5000px;
   background-color: green;
 }
 
