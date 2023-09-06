@@ -11934,11 +11934,13 @@ main #carouselExampleCaptions {
 main .hrs {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 main .hrs .hrs-item {
   flex: 1;
   padding: 10px;
   height: 300px;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -11953,6 +11955,11 @@ main .hrs .hrs-item img {
 main gmp-map {
   width: 100%;
   height: 400px;
+  padding-bottom: 25px;
+}
+
+#hrs-left {
+  background-color: #d9d9d9;
 }
 
 .crop-container {
@@ -11972,13 +11979,20 @@ main gmp-map {
   object-fit: cover;
 }
 
-footer {
-  background-color: green;
-}
-
 h4, .h4 {
   font-size: 3rem;
   text-align: center;
+}
+
+footer {
+  height: 60px;
+  background-color: #565656;
+  padding-bottom: 10px;
+}
+footer h6, footer .h6 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
