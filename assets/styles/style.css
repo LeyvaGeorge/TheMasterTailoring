@@ -11939,7 +11939,20 @@ main .hrs .hrs-item {
   flex: 1;
   padding: 10px;
   height: 300px;
-  background-color: darkcyan;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .hrs .hrs-item h5, main .hrs .hrs-item .h5 {
+  font-size: 2.15rem;
+}
+main .hrs .hrs-item img {
+  height: 300px;
+}
+main gmp-map {
+  width: 100%;
+  height: 400px;
 }
 
 .crop-container {
@@ -11961,6 +11974,11 @@ main .hrs .hrs-item {
 
 footer {
   background-color: green;
+}
+
+h4, .h4 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

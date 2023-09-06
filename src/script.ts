@@ -25,3 +25,5 @@ function showSlides(n:number) {
     (slides[slideIndex-1] as HTMLElement).style.display= 'block';
     dots[slideIndex-1].className += ' active';
 }
+
+
