@@ -30,14 +30,13 @@
             <h3>Location</h3>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#call">
+            <a href="tel:+1951-929-0289"><h3>Call Now</h3></a>
+          </a>
+        </li>
       </ul>
     </nav>
-    <!-- <h2>M T</h2>
-        <ul>
-            <li><h4>Call</h4></li>
-            <li><a href="#hours"><h4>Hours</h4></a></li>
-            <li><a href="#location"><h4>Location</h4></a></li>
-        </ul> -->
   </header>
   <main>
 
@@ -61,10 +60,10 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="crop-container">
-            <img src="assets/images/AdobeStock_223416424.jpeg" class="d-block w-100 crop-image" alt="Wedding Dresses">
+            <img src="assets/images/AdobeStock_177132088.jpeg" class="d-block w-100 crop-image" alt="Wedding Dresses">
           </div>
           <div class="carousel-caption d-none d-md-block text-dark">
-            <h5>Where Fashion Finds its Perfect Fit</h5>
+            <h5 id="shadow">Where Fashion Finds its Perfect Fit</h5>
           </div>
         </div>
         <div class="carousel-item">
@@ -73,7 +72,7 @@
               alt="Suit with Stiches to Alter">
           </div>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Elevate Your Wardrobe, One Stitch at a Time</h5>
+            <h5 >Elevate Your Wardrobe, One Stitch at a Time</h5>
           </div>
         </div>
         <div class="carousel-item">
@@ -122,16 +121,18 @@
 
 
       <h4 id="location">Location</h4>
-      <gmp-map center="33.74781799316406,-116.96896362304688" zoom="14" map-id="DEMO_MAP_ID">
-        <gmp-advanced-marker position="33.74781799316406,-116.96896362304688" title="My location">
-        </gmp-advanced-marker>
-      </gmp-map>
+      <div class="map">
+        <gmp-map center="33.74781799316406,-116.96896362304688" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="33.74781799316406,-116.96896362304688" title="My location">
+          </gmp-advanced-marker>
+        </gmp-map>
+      </div>
     </div>
 
   </main>
   <footer>
     <div>
-      <h6>© The Master Tailoring 2023</h6>
+      <h6>© The Master Tailoring 2023</h6 >
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
