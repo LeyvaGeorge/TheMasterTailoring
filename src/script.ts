@@ -6,14 +6,11 @@ function readDayAndHour(): boolean {
 
     var currentHour = currentDate.getHours();
 
-    console.log("Today is " + daysOfWeek[dayOfWeek] + ".");
-    console.log("The current Hour is:" + currentHour);
     if (dayOfWeek > 0) {
         if(currentHour > 9 && currentHour <18)
         return true;
     }
     return false;
-  
 }
 let openHours: boolean = readDayAndHour();
 //This works so far change to have a it to true/false must be day 1-6 and hours
@@ -25,34 +22,65 @@ if(openHours){
     imgElement.src="../assets/images/Closed.png";
     imgElement.alt="Closed Sign";
 }
+// Google map API
+// Initialize and add the map
+let map;
+async function initMap(): Promise<void> {
+  // The location of Uluru
+  const position = { lat: 33.74783, lng: -116.96894 };
+  //33.747831267786864, -116.96894144912552
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
 
-
-let slideIndex:number = 1;
-
-showSlides(slideIndex);
-
-function plusSlides(n:number) {
-    showSlides(slideIndex +=n);
-}
-
-function currentSlide(n:number) {
-    showSlides(slideIndex = n)
-}
-
-function showSlides(n:number) {
-    let i;
-    let slides = document.getElementsByTagName('mySlides');
-    let dots = document. getElementsByClassName('dot');
-    if(n > slides.length) {slideIndex = 1}
-    if(n < 1) {slideIndex = slides.length}
-    for(i = 0; i < slides.length;i++){
-        (slides[i] as HTMLElement).style.display = 'none';
+  // The map, centered at The Master Tailoring
+  map = new Map(
+    document.getElementById('map') as HTMLElement,
+    {
+      zoom: 18,
+      center: position,
+      mapId: 'DEMO_MAP_ID',
     }
-    for(i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', "");
-    }
-    (slides[slideIndex-1] as HTMLElement).style.display= 'block';
-    dots[slideIndex-1].className += ' active';
+  );
+
+  // The marker, positioned at The Master Tailoring
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: 'The Master Tailoring'
+  });
 }
+
+initMap();
+
+//Slides for carosell 
+// let slideIndex:number = 1;
+
+// showSlides(slideIndex);
+
+// function plusSlides(n:number) {
+//     showSlides(slideIndex +=n);
+// }
+
+// function currentSlide(n:number) {
+//     showSlides(slideIndex = n)
+// }
+
+// function showSlides(n:number) {
+//     let i;
+//     let slides = document.getElementsByTagName('mySlides');
+//     let dots = document. getElementsByClassName('dot');
+//     if(n > slides.length) {slideIndex = 1}
+//     if(n < 1) {slideIndex = slides.length}
+//     for(i = 0; i < slides.length;i++){
+//         (slides[i] as HTMLElement).style.display = 'none';
+//     }
+//     for(i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(' active', "");
+//     }
+//     (slides[slideIndex-1] as HTMLElement).style.display= 'block';
+//     dots[slideIndex-1].className += ' active';
+// }
 
 

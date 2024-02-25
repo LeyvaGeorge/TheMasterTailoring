@@ -25,6 +25,7 @@
     "sass": "^1.66.1"
   },
   "devDependencies": {
+    "@types/google.maps": "^3.55.3",
     "node-sass": "^9.0.0",
     "nodemon": "^3.0.1",
     "typescript": "^5.2.2"
